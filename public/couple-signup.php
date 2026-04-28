@@ -175,6 +175,9 @@ body{font-family:var(--sans);background:var(--ink);color:var(--white);min-height
         <input type="hidden" name="mode" value="login">
         <div class="field"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
         <div class="field"><label>Password</label><input type="password" name="password" placeholder="Your password" required></div>
+        <div class="field" style="text-align: right; margin-top: -10px; margin-bottom: 20px;">
+          <a href="forgot-password.php" style="color: var(--gold); font-size: 0.9em; text-decoration: none;">Forgot Password?</a>
+        </div>
         <button type="submit" class="btn-submit">Sign In &rarr;</button>
       </form>
       <p class="switch-link">New here? <a href="?mode=signup">Create your wedding</a></p>

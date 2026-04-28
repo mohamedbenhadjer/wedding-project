@@ -14,6 +14,8 @@ CREATE TABLE couples (
   name1        VARCHAR(100) NOT NULL,
   name2        VARCHAR(100) NOT NULL,
   wedding_id   CHAR(8)      NOT NULL UNIQUE,
+  reset_token  VARCHAR(255) DEFAULT NULL,
+  reset_expires DATETIME    DEFAULT NULL,
   created_at   DATETIME     DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
